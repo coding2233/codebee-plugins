@@ -1,0 +1,22 @@
+{
+  "id": "com.codebee.mytray",
+  "name": "My Tray",
+  "version": "0.1.0",
+  "author": "",
+  "description": "A standalone CodeBee tray plugin with global hotkeys.",
+  "license": "MIT",
+  "runtime": "lua",
+  "main": "main.lua",
+  "contributes": {
+    "tray": {
+      "standalone": true,
+      "keepAlive": true,
+      "tooltip": "My Tray"
+    },
+    "commands": [
+      { "id": "com.codebee.mytray.open", "title": "My Tray: Open CodeBee" },
+      { "id": "com.codebee.mytray.greet", "title": "My Tray: Say Hello" },
+      { "id": "com.codebee.mytray.quit", "title": "My Tray: Quit Tray" }
+    ]
+  }
+}
